@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paper</title>
+
+  <style>
+    body {
+  background-image: url('templates/paper_realistic/wood.jpg');
+  background-repeat: repeat;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+	  color: #990066;
+    }
+
+	a {
+  color: blue; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: darkblue; 
+}
+
+a:active {
+  color: darkslateblue; 
+}
+
+    #text::before {
+      content: "\"";
+    }
+    #text::after {
+      content: "\"";
+    }
+    #title::after {
+      content: " said:";
+      font-size: 20px;
+    }
+
+.card {
+  font-family: Courier, monospace;
+  background-color: white;
+  background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+  background-position-y: 34px;
+  height: auto;
+  width: 350px; 
+  padding: 0;
+  margin-top: 50px;
+  margin-right: 15px; 
+  height: 400px;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.8); 
+ 
+}
+
+    .card header {
+      background: linear-gradient(white, white 33px, pink 35px, pink 36px);
+      height: 36px;
+    }
+    .card-title {
+      position: relative;
+      left: 10px;
+      top: 8px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .card-text {
+      position: relative;
+      top: 30px;
+      font-size: 18px;
+      margin: 0 25px;
+      line-height: 27px;
+
+    }
+
+.sheet {
+  font-family: Courier, monospace;
+  height: auto;
+  width: 700px; 
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 15px; 
+  margin-right: 20px; 
+  margin-bottom: 50px; 
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 0 3px 15px 3px; 
+  background: linear-gradient(30deg, #ffffcc, white, white);
+  transform: rotate(-0.8deg);
+}
+
+    .sheet header {
+      background-color: white;
+      background: linear-gradient(white, white 48px, #9198e5 49px, #9198e5 50px);
+      height: 50px;
+    }
+    .sheet-title {
+      position: relative;
+      top: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+.sheet-text {
+  width: 650px;
+  margin: 0 55px;
+  max-height: none; 
+}
+
+    .margin {
+      width: 49px;
+      height: 100%;
+    }
+    .l-margin {
+      float: left;
+      border-right: 2px solid pink;
+    }
+    .r-margin {
+      float: right;
+      border-left: 1px solid pink;
+    }
+
+    .l-margin {
+      position: relative;
+    }
+    .hole {
+      height: 20px;
+      width: 20px;
+  background-image: url('templates/paper_realistic/wood.jpg');
+      border-radius: 50%;
+      position: absolute;
+      left: 15px;
+	  box-shadow: inset 3px 0px 10px rgba(0, 0, 0, 0.6), 2px 0px 2px rgba(0, 0, 0, 0.8);
+    }
+    .first-hole {
+      top: 50px;
+    }
+    .second-hole {
+      top: 50%;
+    }
+    .third-hole {
+      bottom: 45px;
+    }
+    .hole1 {
+      width: 20px; 
+      height: 20px; 
+  background-image: url('templates/paper_realistic/wood.jpg');
+      border-radius: 50%;
+      position: absolute;
+      top: 70px; 
+      right: 15%; 
+	  box-shadow: inset 3px 0px 10px rgba(0, 0, 0, 0.6), 2px 0px 2px rgba(0, 0, 0, 0.8);
+    }
+	    .hole2 {
+      width: 20px; 
+      height: 20px; 
+  background-image: url('templates/paper_realistic/wood.jpg');
+      border-radius: 50%;
+      position: absolute;
+      top: 70px; 
+      right: 30%;
+	  box-shadow: inset 3px 0px 10px rgba(0, 0, 0, 0.6), 2px 0px 2px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="l-margin margin">
+    <div class="hole first-hole"></div>
+    <div class="hole second-hole"></div>
+    <div class="hole third-hole"></div>
+  </div>
+  <div class="r-margin margin"></div>
+  <header>
+    <span class="sheet-title">
+      Мy Diary
+    </span>
+  </header>
+  <p class="sheet-text"><br>[[CONTENTS]]</p>
+</div>
+
+<div class="card">
+  <header>
+    <span class="card-title">
+      <center>MENU</center>
+    </span>
+  </header>
+  <div class="hole1"></div>
+  <div class="hole2"></div>
+  <p class="card-text">[[NAVIGATION]]<br><br><br><br><br>[[footer.txt]]</p>
+</div>
+
+</body>
+</html>
